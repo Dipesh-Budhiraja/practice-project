@@ -6,14 +6,18 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var handleBars = require('express-handlebars');
 var mongoose = require('mongoose');
-var index = require('./routes/index');
-var users = require('./routes/users');
 const session = require('express-session');
 const passport = require('passport');
 var flash=require('connect-flash');
 const validator = require('express-validator');
+
 const mongoStore = require('connect-mongo')(session);
+
+
+var index = require('./routes/index');
+var users = require('./routes/users');
 var app = express();
+// mongoose.connect('localhost:27017/practice');
 
 mongoose.connect('localhost:27017/practice');
 
