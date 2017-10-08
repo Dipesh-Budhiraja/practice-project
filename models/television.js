@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 var schema = new mongoose.Schema({
     title:{type:String,required:true},
-    imamgePath:{type:String,required:true},
+    imagePath:{type:String,required:true},
     dimension:{
         height:{type:Number,required:true},
         width:{type:Number,required:true},
@@ -12,4 +12,4 @@ var schema = new mongoose.Schema({
     price:{type:Number,required:true},
 });
 
-module.exports = mongoose.model('Tv',schema);
+module.exports = mongoose.model('television',schema);
