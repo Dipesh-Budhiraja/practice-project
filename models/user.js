@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
-var schema - new Schema({
+var bcrypt = require('bcrypt-nodejs');
+
+var schema = new Schema({
     name:{type:String,required:true},
     mobileNo:{type:String,require:true},
     username:{type:String,require:true},
     password:{type:String,require:true}
 });
-
 
 const bcrypt = require('bcrypt-nodejs');
 

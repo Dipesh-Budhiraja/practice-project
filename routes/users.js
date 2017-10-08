@@ -20,7 +20,8 @@ router.use('/', notLoggedIn, function(req, res, next){
 });
 
 router.get('/signup', function(req, res, next){
-    res.render('user/signup', {csrfToken: res.csrfToken()});
+    var messages = req.flash('error');
+    res.render('user/signup', {csrfToken: res.csrfToken(), messages: messages, hasErrors: messages.length > 0});
 });
 
 router.post('/signup', passport.authenticate('local-signup', {
@@ -30,14 +31,15 @@ router.post('/signup', passport.authenticate('local-signup', {
 }));
 
 router.get('/signin', function(req, res, next){
-    res.render('/user/signin', {csrfToken: res.csrfToken()});
+    var messages = req.flash('error');
+    res.render('/user/signin', {csrfToken: res.csrfToken(), messages: messages, hasErrors: messages.length > 0});
 });
 
 router.post('/signin', passport.authenticate('local-signin', {
     successRedirect: '/user/profile',
     failureRedirect: '/user/signin',
     failureFlash: true
-})
+}));
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
