@@ -9,9 +9,8 @@ var tvs = [
         title: 'SONY Bravia',
         description: 'Awesome TV!!!!',
         price: 100000,
-        // dimension: {10,10},
+        // dimension: {height10,10},
         dimension: {height:11,width:12},
-
         brand:'sony'
     }),
     new Tv({
@@ -49,17 +48,17 @@ var tvs = [
         // dimension: {15,15},
         dimension: {height:11,width:12},
         brand:'LG'
-    }),
-]
+    })
+];
 
 var done=0;
 for (var i = 0; i < tvs.length; i++) {
     tvs[i].save(function(err,result){
         done++;
-        if (done== tvs.length){
+        if (done === tvs.length){
             exit();
         }
-    })
+    });
 }
 function exit(){
     mongoose.disconnect();
