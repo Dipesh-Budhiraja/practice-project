@@ -13,4 +13,5 @@ var schema = new Schema({
     price:{type:Number,required:true}
 });
 
-module.exports = mongoose.model('television', schema);
+module.exports = mongoose.model('television',schema);
+
