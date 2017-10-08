@@ -37,7 +37,7 @@ router.post('/signin', passport.authenticate('local-signin', {
     successRedirect: '/user/profile',
     failureRedirect: '/user/signin',
     failureFlash: true
-})
+}));
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
