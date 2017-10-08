@@ -7,14 +7,14 @@ router.get('/', function(req, res, next) {
   res.render('shop/index', { title: 'Express' });
 });
 
-router.get('/phone',function(req,res,next){
+router.get('/phones',function(req,res,next){
     var phones=Phones.find(function(err,result){
-        var productchunks=[];
+        var productChunks=[];
         var chunkSize=3;
         for (var i = 0; i < result.length; i+=chunkSize) {
             productChunks.push(result.slice(i,i+chunkSize));
         }
-        res.render('shop/phone',{title:'Phones',products:productChunks});
+        res.render('shop/phones',{title:'Phones',products:productChunks});
     })
 })
 module.exports = router;
