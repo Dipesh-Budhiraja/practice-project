@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Shop Here</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+
+#title1,#titlex,#title2,#title3{
+	font-style: italic;
+	font-size: 40px;
+
+}
+
+p{
+	font-size: 25px;
+}
+
+#foot{
+	background-color: teal;
+}
+
+#goto{
+	color:white;
+	font-size: 25px;
+	font-style:oblique; 
+}
+
+</style>
+
+  
+  <body>
+
+  <!--1 navbar-->
+
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ShopZone</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Phones</a></li>
+          <li><a href="#">TV</a></li>
+          <li><a href="#">Appliances</a></li>
+        </ul>
+      </li>
+    </ul>
+    <form class="navbar-form navbar-left">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+     <ul class="nav navbar-nav navbar-right">
+      <li class = "active"> <a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+      <li><a href="#"> <span class="glyphicon glyphicon-log-in"></span>Log In</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<!--2 jumbotron-->
+
+ <div class = "jumbotron bg-info text-white text-center" style="background-color: orange" id = "myjumbo">
+    <div class = "container">
+          <h1 class = "display-1"> Featured Deals</h1>
+          <h2 >Scroll down to see the latest products!</h2>
+    </div>
+ </div>
+
+ <!-- cards for product display-->
+
+
+<div class = "container">
+<div class = "row">
+
+<div class = "card col-lg-6">
+	 <img class = "card-img-top img-fluid"  src = "http://drop.ndtv.com/TECH/product_database/images/832016120148PM_635_oppo_f1s.jpeg"/>
+     <div class = "card-block text-center">
+      <h2 class = "card-title" id = "title1">Oppo S1</h2>
+      <p class = "card-text">Rs 9999 after discount!</p>
+     </div>
+</div>
+
+<div class = "card col-lg-6">
+	 <img class = "card-img-top img-fluid "  src = "http://drop.ndtv.com/TECH/product_database/images/329201783846PM_635_samsung_galaxy_s8.jpeg"/>
+     <div class = "card-block text-center">
+      <h2 class = "card-title" id = "titlex">Samsung S8</h2>
+      <p class = "card-text">Rs 49999 after discount!</p>
+     </div>
+</div>
+
+
+<div class = "card col-lg-12">
+	 <img class = "card-img-top img-fluid center-block" src = "http://4.bp.blogspot.com/-tcDbAwyFnz4/UO_xj9uP0UI/AAAAAAABPz0/oeLMyNBBk4U/s1600/image009.jpg"/>
+     <div class = "card-block text-center">
+      <h2 class = "card-title" id = "title2">Samsung Curved TV</h2>
+      <p class = "card-text">Rs 99999 after discount!</p>
+     </div>
+</div>
+
+<div class = "card col-lg-6">
+	 <img class = "card-img-top img-fluid" src = "https://images-na.ssl-images-amazon.com/images/I/41uYl4qWMOL.jpg"/>
+     <div class = "card-block text-center">
+      <h2 class = "card-title" id = "title3">Braun Cruzer series 6</h2>
+      <p class = "card-text">Rs 999 after discount!</p>
+     </div>
+</div>
+
+<div class = "card col-lg-6">
+	 <img class = "card-img-top img-fluid" src = "https://smedia.webcollage.net/rwvfp/wc/cp/21851835/module/nutribullet/_cp/products/1447192126515/tab-28a6bc5c-d5a4-4cb3-abfb-a7114a9301d8/0166a7e9-0b03-4efe-8bde-3a1030e6c73f.jpg.w480.jpg"/>
+     <div class = "card-block text-center">
+      <h2 class = "card-title" id = "title3">Magic Bullet</h2>
+      <p class = "card-text">Rs 1999 after discount!</p>
+     </div>
+</div>
+
+</div>
+</div>
+
+<!-- footer-->
+
+<div class = "container-fluid" id = "foot">
+<div class = "card col-lg-12">
+	 
+     <div class = "card-block text-center">
+      <h2 class = "card-title" id = "titlef">Posted By: dev@nsit</h2>
+      <p class = "card-text">Contact Information: hash@email.com</p>
+      <a href = "#myjumbo" id = "goto">GO TO TOP!</a>
+     </div>
+
+</div>
+</div>
+
+
+
+  </body>
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
