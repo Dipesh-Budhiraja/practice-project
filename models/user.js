@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
-var bcrypt = require('bcrypt-nodejs');
+const bcrypt = require('bcrypt-nodejs');
+// var bcrypt = require('bcrypt-nodejs');
 
-var schema = new Schema({
+var schema = mongoose.Schema({
     name:{type:String,required:true},
     mobileNo:{type:String,require:true},
     username:{type:String,require:true},
     password:{type:String,require:true}
 });
 
-const bcrypt = require('bcrypt-nodejs');
 
 schema.methods.encryptPassword=function (password) {
     return bcrypt.hashSync(password,bcrypt.genSaltSync(5),null);
